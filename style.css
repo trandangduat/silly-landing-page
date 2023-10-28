@@ -2,6 +2,10 @@ body {
     font-family: 'Lusiana', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
 #navbar {
     display: flex;
     background: white;
@@ -39,4 +43,43 @@ body {
 
 #navbar #logo {
     font-size: 40px;
+}
+ 
+#navbar #logo h2 {
+    display:block;
+    margin: auto;
+}
+
+#banner {
+    display: flex;
+    background: #03c1df;
+    padding: 50px;
+    border-bottom: 3px solid;
+}
+
+#banner #about {flex-grow: 1;}
+
+#banner #avatar {
+    flex-grow: 1;
+}
+
+#banner #avatar img {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    border: 6px solid black;
+    float: right;
+}
+
+#banner #about #desc {
+    font-style: italic;
+    font-size: 20px;
+}
+
+button#sign-up {
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid;
 }
