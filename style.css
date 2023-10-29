@@ -1,17 +1,32 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Neucha', cursive;
     background: #e6e6e6;
+    margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Luckiest Guy', cursive;
 }
 
+a, button {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.thin {
+    padding-left: 300px!important;
+    padding-right: 300px!important;
+}
+
 #navbar {
     display: flex;
-    background: white;
-    border-bottom: 3px solid black;
-    padding: 5px;
+    background: #eaa327;
+    border-bottom: 3px solid #1a1a1a;
+    padding: 25px;
     align-items: center;
 }
 
@@ -22,15 +37,17 @@ h1, h2, h3, h4, h5, h6 {
 #navbar #links ul {
     display: flex;
     list-style-type: none;
+    justify-content: flex-end;
 }
 
 #navbar #links ul li {
     flex: 1;
     text-align: center;
+    flex-grow: .25;
 }
 
 #navbar #links {
-    flex-grow: .3;
+    flex-grow: .5;
 }
 
 #navbar #links ul li a {
@@ -39,10 +56,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     background: #55b6ae;
     color: #1a1a1a;
-    border: 6px solid #1a1a1a;
-    border-top: none;
-    border-left: none;
-    border-radius: 10px;
+    box-shadow: 5px 5px #1a1a1a;
+    border: 2px solid #1a1a1a;
 }
 
 #navbar #logo {
@@ -50,8 +65,9 @@ h1, h2, h3, h4, h5, h6 {
 }
  
 #navbar #logo h2 {
-    display:block;
+    display: block;
     margin: auto;
+    text-shadow: 35px 25px #55b6ae;
 }
 
 #banner {
@@ -73,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
     border: 6px solid #1a1a1a;
     float: right;
+    box-shadow: 15px 11px #eaa327;
 }
 
 #banner #about #desc {
@@ -81,11 +98,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button#sign-up {
-    background: #f398be;
+    background: #eaa327;
     padding: 10px;
     font-size: 18px;
-    border: 6px solid #1a1a1a;
-    border-top: none;
-    border-left: none;
-    border-radius: 10px;
+    border: 3px solid #1a1a1a;
+    box-shadow: 5px 5px #1a1a1a;
+}
+
+#members {
+    display: flex;
+    gap: 20px;
+    height: 350px;
+}
+
+#members #card {
+    flex: 1;
+}
+
+#members #card img {
+    width: 300px;
+    height: 300px;
+    border: 7px solid #1a1a1a;
+    box-shadow: 10px 10px #da929d;
+    position: absolute;
+}
+
+#members #info {
+    position:absolute;
+    margin-left: 20px;
+    color: white;
+}
+
+#members #info #about {
+    font-size: 20px;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #e6e6e6;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+section#quote {
+    background: #768bba;
+    padding: 10px;
+}
+
+#quote p {
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 0px 3px #5d72a1;
 }
