@@ -1,5 +1,6 @@
 body {
-    font-family: 'Lusiana', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: #e6e6e6;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,9 +37,12 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
-    border: 2px solid;
-    border-radius: 5px;
-    color: black;
+    background: #55b6ae;
+    color: #1a1a1a;
+    border: 6px solid #1a1a1a;
+    border-top: none;
+    border-left: none;
+    border-radius: 10px;
 }
 
 #navbar #logo {
@@ -52,9 +56,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #banner {
     display: flex;
-    background: #03c1df;
+    background: #55b6ae;
     padding: 50px;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid #1a1a1a;
 }
 
 #banner #about {flex-grow: 1;}
@@ -67,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 100%;
     width: 300px;
     height: 300px;
-    border: 6px solid black;
+    border: 6px solid #1a1a1a;
     float: right;
 }
 
@@ -77,9 +81,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button#sign-up {
-    background: white;
+    background: #f398be;
     padding: 10px;
     font-size: 18px;
+    border: 6px solid #1a1a1a;
+    border-top: none;
+    border-left: none;
     border-radius: 10px;
-    border: 2px solid;
 }
