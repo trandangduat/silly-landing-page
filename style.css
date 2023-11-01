@@ -95,12 +95,10 @@ header {
 }
 
 #banner #avatar img {
-    border-radius: 100%;
     width: 300px;
-    height: 300px;
-    border: 6px solid #1a1a1a;
     float: right;
-    box-shadow: 15px 11px #eaa327;
+    transform: scaleX(-1);
+    filter: grayscale(100%);
 }
 
 #banner #about #desc {
@@ -129,8 +127,6 @@ button#sign-up {
 
 #members {
     display: flex;
-    gap: 20px;
-    height: 350px;
 }
 
 #members #card {
@@ -142,13 +138,6 @@ button#sign-up {
     height: 300px;
     border: 7px solid #1a1a1a;
     box-shadow: 10px 10px #da929d;
-    position: absolute;
-}
-
-#members #info {
-    position:absolute;
-    margin-left: 20px;
-    color: white;
 }
 
 #members #info #about {
