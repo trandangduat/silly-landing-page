@@ -1,20 +1,25 @@
 body {
-    font-family: 'Neucha', cursive;
+    font-family: 'Patrick Hand', cursive;
     background: #e6e6e6;
     margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Passion One', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 a, button {
-    font-weight: 800;
+    font-family: 'Passion One', sans-serif;
+    /* font-weight: 800; */
+    text-transform: uppercase;
     cursor: pointer;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .thin {
@@ -22,10 +27,16 @@ img {
     padding-right: 300px!important;
 }
 
+.anim:hover {
+    box-shadow: 7px 7px #1a1a1a !important;
+}
+
+.anim:active {
+    box-shadow: 5px 5px #1a1a1a !important;
+}
+
 #navbar {
     display: flex;
-    background: #eaa327;
-    border-bottom: 3px solid #1a1a1a;
     padding: 25px;
     align-items: center;
 }
@@ -41,13 +52,8 @@ img {
 }
 
 #navbar #links ul li {
-    flex: 1;
     text-align: center;
-    flex-grow: .25;
-}
-
-#navbar #links {
-    flex-grow: .5;
+    margin-left: 15px;
 }
 
 #navbar #links ul li a {
@@ -55,6 +61,7 @@ img {
     font-size: 20px;
     padding: 10px;
     background: #55b6ae;
+    background-image: linear-gradient(to top, #00ffe069, transparent);
     color: #1a1a1a;
     box-shadow: 5px 5px #1a1a1a;
     border: 2px solid #1a1a1a;
@@ -70,11 +77,15 @@ img {
     text-shadow: 35px 25px #55b6ae;
 }
 
+header {
+    background: linear-gradient(to bottom, #ffd68e, #3f24004f), url('Resources/Images/abstract-2068612_1280.jpg');
+    background-size: cover;
+}
+
 #banner {
     display: flex;
-    background: #55b6ae;
     padding: 50px;
-    border-bottom: 3px solid #1a1a1a;
+    border-bottom: 5px solid #1a1a1a;
 }
 
 #banner #about {flex-grow: 1;}
@@ -94,15 +105,26 @@ img {
 
 #banner #about #desc {
     font-style: italic;
+    margin: 0;
     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 70%;
+    background: #dcdcdc;
+    padding: 10px 19px;
+    border: 4px solid #1a1a1a;
+    box-shadow: 5px 5px #eaa327;
+    margin-bottom: 20px;
 }
 
 button#sign-up {
     background: #eaa327;
     padding: 10px;
-    font-size: 18px;
+    font-size: 21px;
     border: 3px solid #1a1a1a;
     box-shadow: 5px 5px #1a1a1a;
+    color: #1a1a1a;
+    background-image: linear-gradient(to top, #ff000094, transparent);
 }
 
 #members {
@@ -135,6 +157,7 @@ button#sign-up {
 
 footer {
     background: #1a1a1a;
+    text-transform: uppercase;
     color: #e6e6e6;
     padding: 10px;
     text-align: center;
@@ -152,4 +175,14 @@ section#quote {
     font-size: 30px;
     font-weight: 800;
     text-shadow: 0px 3px #5d72a1;
+}
+
+#about h1 {
+    background: #da929d;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 4px solid #1a1a1a;
+    box-shadow: 5px 5px #ffffff78;
+    margin: 0;
+    margin-bottom: 20px;
 }
