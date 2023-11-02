@@ -1,13 +1,14 @@
 body {
     font-family: 'Patrick Hand', cursive;
-    background: #e6e6e6;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Passion One', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
+    margin: 0;
 }
 
 a, button {
@@ -25,6 +26,7 @@ img {
 .thin {
     padding-left: 300px!important;
     padding-right: 300px!important;
+    /* margin-bottom: 10px; */
 }
 
 .anim:hover {
@@ -65,6 +67,7 @@ img {
     color: #1a1a1a;
     box-shadow: 5px 5px #1a1a1a;
     border: 2px solid #1a1a1a;
+    display: block;
 }
 
 #navbar #logo {
@@ -127,21 +130,33 @@ button#sign-up {
 
 #members {
     display: flex;
+    gap: 10px;
 }
 
 #members #card {
     flex: 1;
+    border: 5px solid #1a1a1a;
+    box-shadow: 5px 5px #20867b;
+    background: #eaa327;
+    padding-top: 30%;
+    background: linear-gradient(to bottom, transparent, transparent), url(Resources/Images/cat5.png);
+    background-size: cover;
 }
 
-#members #card img {
-    width: 300px;
-    height: 300px;
-    border: 7px solid #1a1a1a;
-    box-shadow: 10px 10px #da929d;
+#members #card #info {
+    border: 4px solid #1a1a1a;
+    background: gainsboro;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    /* position: absolute; */
+    padding: 5px 25px;
+    margin: 10px;
+    /* display: none; */
 }
 
-#members #info #about {
-    font-size: 20px;
+#members #card #info * {
+    margin: auto;
 }
 
 footer {
@@ -153,17 +168,43 @@ footer {
     font-size: 17px;
 }
 
-section#quote {
-    background: #768bba;
-    padding: 10px;
+main {
+    background: linear-gradient(to bottom, transparent, transparent), url(Resources/Images/retro-city-bg.jpg);
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
 }
 
 #quote p {
+    border: 4px solid #1a1a1a;
+    background: gainsboro;
+    box-shadow: 5px 5px #171717;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    padding: 20px 25px;
+    font-size: 40px;
     text-align: center;
-    color: #e6e6e6;
-    font-size: 30px;
-    font-weight: 800;
-    text-shadow: 0px 3px #5d72a1;
+}
+
+#quote p .author {
+    font-family: 'Passion One', sans-serif;
+    font-weight: 100;
+    color: #952400;
+}
+
+#quote .row1 {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#quote p {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 #about h1 {
@@ -173,5 +214,23 @@ section#quote {
     border: 4px solid #1a1a1a;
     box-shadow: 5px 5px #ffffff78;
     margin: 0;
+    margin-bottom: 20px;
+}
+
+h1#staffs {
+    padding: 20px;
+    font-size: 40px;
+    background: linear-gradient(to bottom, #1a1a1a, #1c2530);
+    color: #f9e4b9;
+    text-shadow: 3px 3px #1a1a1a75;
+    margin-bottom: 20px;
+}
+
+h1#quotes {
+    padding: 20px;
+    font-size: 40px;
+    background: linear-gradient(to bottom, #1a1a1a, #1c2530);
+    color: #f9e4b9;
+    text-shadow: 3px 3px #1a1a1a75;
     margin-bottom: 20px;
 }
