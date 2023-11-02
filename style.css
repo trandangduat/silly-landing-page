@@ -169,7 +169,7 @@ footer {
 }
 
 main {
-    background: linear-gradient(to bottom, transparent, transparent), url(Resources/Images/retro-city-bg.jpg);
+    background: linear-gradient(to bottom, #1c252f, transparent), url(Resources/Images/retro-city-bg.jpg)
 }
 
 #quote {
@@ -220,16 +220,7 @@ main {
 h1#staffs {
     padding: 20px;
     font-size: 40px;
-    background: linear-gradient(to bottom, #1a1a1a, #1c2530);
-    color: #f9e4b9;
-    text-shadow: 3px 3px #1a1a1a75;
-    margin-bottom: 20px;
-}
-
-h1#quotes {
-    padding: 20px;
-    font-size: 40px;
-    background: linear-gradient(to bottom, #1a1a1a, #1c2530);
+    background: linear-gradient(to bottom, #1a1a1a, transparent);
     color: #f9e4b9;
     text-shadow: 3px 3px #1a1a1a75;
     margin-bottom: 20px;
