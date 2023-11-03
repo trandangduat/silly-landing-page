@@ -136,11 +136,22 @@ button#sign-up {
 #members #card {
     flex: 1;
     border: 5px solid #1a1a1a;
-    box-shadow: 5px 5px #20867b;
-    background: #eaa327;
-    padding-top: 30%;
-    background: linear-gradient(to bottom, transparent, transparent), url(Resources/Images/cat5.png);
-    background-size: cover;
+    box-shadow: 5px 5px #1a1a1a;
+    background: rgb(239, 239, 239);
+    padding-top: 40%;
+    background: url(Resources/Images/cat5.png);
+    background-size:     cover !important;                      /* <------ */
+    background-repeat:   no-repeat !important;
+    background-position: center center !important;
+    filter: grayscale(1);   
+    box-shadow: 0 0 100px rgba(0,0,0,0.9) inset;
+    transition: 0.3s;
+}
+
+#members #card:hover {
+    flex-grow: 1.5;
+    box-shadow: none;
+    filter: none;
 }
 
 #members #card #info {
@@ -150,7 +161,7 @@ button#sign-up {
     font-weight: 700;
     font-style: italic;
     /* position: absolute; */
-    padding: 5px 25px;
+    padding: 5px 15px;
     margin: 10px;
     /* display: none; */
 }
@@ -175,6 +186,7 @@ main {
 #quote {
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 #quote p {
@@ -196,7 +208,6 @@ main {
 }
 
 #quote .row1 {
-    margin-top: 20px;
     display: flex;
     gap: 20px;
 }
@@ -224,4 +235,19 @@ h1#staffs {
     color: #f9e4b9;
     text-shadow: 3px 3px #1a1a1a75;
     margin-bottom: 20px;
+}
+
+section#ads {
+    background: linear-gradient(45deg, #953e3e, #00000073);
+    padding: 44px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    color: gainsboro;
+}
+
+#ads p {
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Passion One', sans-serif;
 }
